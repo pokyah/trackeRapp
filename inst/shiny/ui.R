@@ -149,7 +149,7 @@ ui <- tagList(
                       ## Browser checks
                       tags$head(tags$script(src="bowser.min.js")),
                       tags$head(tags$script(src="buttons.js")),
-                      shinyjs::extendShinyjs(text = opts$custom_js),
+                      #shinyjs::extendShinyjs(text = opts$custom_js),
                       ## A hack to load the right js
                       mapdeck::mapdeckOutput(outputId = "dummy_map")
                       ))))
