@@ -35,6 +35,7 @@ read_directory_shiny <- function(directory,
         allData <- list()
         in_expression <- quote({
             read_fun <- function(j) {
+              browser()
                 currentType <- fileType[j]
                 incProgress(1/lall, detail = paste(j, "out of", lall, paste0("(", currentType, ")")))
                 out <- try(read_container(file = allFiles[j],
